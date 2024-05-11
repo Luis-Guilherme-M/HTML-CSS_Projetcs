@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #004F5E;
+    color: white;
+    font-size: 62.5%;
+    display: grid;
+    height: 100vh;
+}
+
+form {
+    background-color: #f1f1f1;
+    min-width: 20rem;
+    max-width: 73rem;
+    margin: auto;
+    text-align: center;
+    padding: 2rem;
+    border-radius: .6rem;
+    box-shadow: 0 0 4rem #00c7ef83;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: black;
+}
+
+.login-inputs > input {
+    padding: .5rem;
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: .18rem solid #30b8e6;
+    color: white;
+    font-size: 1rem;
+}
+
+.username {
+    margin-top: 3rem;
+}
+
+.email {
+    margin-top: 2rem;
+}
+
+.password {
+    margin-top: 2rem;
+}
+
+.remember {
+    text-align: left;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.remember > input {
+    appearance: none;
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    outline: .15rem  solid black;
+    color:  black;
+    top: .08rem;
+    left: .8rem;
+    border-radius: .15rem;
+}
+
+.remember > input:checked::before {
+    content: '\2714';
+    position: relative;
+    font-size: 1rem;
+    top: -.25rem;
+    left: .08rem;
+}
+
+.remember > label {
+    color: black;
+    padding-inline: 2.2rem;
+    font-size: .8rem;
+}
+
+button {
+    cursor: pointer;
+    margin-top: 3rem;
+    width: 100%;
+    height: 2.5rem;
+    background-color: #30b8e6;
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    box-shadow: 0 0 .5rem #30b8e6;
+    transition: box-shadow .25s;
+}
+
+button:hover {
+    box-shadow: 0 0 1rem #30b8e6;
+}
+
+.sing-up {
+    margin-top: 1.8rem;
+    font-size: .8rem;
+    color: black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: .05rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}

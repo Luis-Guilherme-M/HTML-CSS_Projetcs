@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminui o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto flexível">
+    </picture>
+
+    <h1>Reproduzindo áudios</h1> <!-- MP3 WAV OGG -->
+    
+    <h2>Primeira maneira de reproduzir áudio</h2>
+    <audio src="midia/happy-mistake.mp3" controls></audio>
+    
+    <h2>Segunda maneira de reproduzir áudio</h2>
+    <audio preload="metadata" controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não suporta áudio. <a href="midia/guanacast-33.mp3" download="midia/guanacast-33.mp3">Clique aqui</a> para baixar o arquivo</p>
+    </audio>
+
+    <h1>Reproduzindo vídeos</h1> <!-- (MP4 M4V) WEBM OGV -->
+
+    <h2>Inserindo vídeos hospedados localmente</h2>
+    <video width="560" controls loop> <!-- É possível usar o poster="" para fazer uma espécie de thumbnail para o vídeo em questão-->
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.m4v" type="video/mp4">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeo</p>
+    </video>
+
+    <h2>Inserindo vídeos do Youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/K8KizOwGxpk?si=mni5rAV3yX_NUqTm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h2>Inserindo vídeos do Vimeo</h2>
+    <iframe src="https://player.vimeo.com/video/29315013?h=4a7399cc6d&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

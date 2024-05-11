@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Choose a trial plan</legend>
+
+      <div class="radio-wrapper">
+          <div>
+              <input type="radio" name="plan" id="plan1">
+              <label for="plan1">Standard</label>
+          </div>
+          <p>5 TB of space Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed nulla illo officiis ratione illum.</p>
+      </div>
+
+      <div class="radio-wrapper">
+          <div>
+              <input type="radio" name="plan" id="plan2" checked>
+              <label for="plan2">Advanced</label>
+          </div>
+          <p>As much space as you Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint expedita, dolorum perspiciatis placeat labore quaerat.</p>
+      </div>
+
+      <div class="checkbox-wrapper">
+          <input type="checkbox" name="terms" id="checkbox-terms" checked required>
+          <label for="checkbox-terms">I agree with <a href="#">terms and conditions</a> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione reprehenderit non, illo quibusdam sunt vitae quis voluptas nemo.</label>
+      </div>
+
+      <div class="checkbox-wrapper">
+        <input type="checkbox" name="mail" id="checkbox-mail">
+        <label for="checkbox-mail">I'd to receive mailing messages</label>
+      </div>
+      
+      <div>
+        <button type="submit">Start free trial</button>
+        <small>No credit card needed</small>
+      </div>
+    </fieldset>
+  </form>
+</body>
+</html>
